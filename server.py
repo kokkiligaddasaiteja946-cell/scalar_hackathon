@@ -7,6 +7,7 @@ env = SmartInboxEnv()
 
 
 @app.get("/reset")
+@app.post("/reset")
 async def reset():
     return await env.reset()
 
