@@ -1,17 +1,15 @@
 [project]
 name = "smart-inbox-env"
 version = "0.1.0"
-description = "AI email triage OpenEnv environment"
-authors = [
-    { name="Sai Teja", email="your-email@example.com" }
-]
+description = "AI Email Triage OpenEnv Environment"
 dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
     "requests",
-    "openai"
+    "openai",
+    "openenv-core>=0.2.0"
 ]
 
-[tool.openenv]
-entrypoint = "server:app"
+[project.scripts]
+server = "server:app"
