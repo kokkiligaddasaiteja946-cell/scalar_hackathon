@@ -1,5 +1,13 @@
+---
+title: Smart Inbox Env
+emoji: 📧
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
 # Smart Inbox Env
-
 ## Description
 Simulates email triage and response.
 
