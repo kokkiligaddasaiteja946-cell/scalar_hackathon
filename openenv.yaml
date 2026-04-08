@@ -1,0 +1,15 @@
+name: smart-inbox-env
+description: Email triage and response environment
+version: 1.0
+
+entrypoint: server.py
+
+observation_space: Observation
+action_space: Action
+
+reward_range: [0.0, 1.0]
+
+tasks:
+  - spam
+  - meeting
+  - complaint
